@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f3f6fb;
+    color: #17233c;
+    min-height: 100vh;
+}
+
+.topo {
+    height: 76px;
+    background: #101d36;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 9%;
+    color: white;
+}
+
+.marca {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.marca span {
+    color: #4b9cff;
+}
+
+.etiqueta {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #c0cbe0;
+    font-weight: 600;
+}
+
+.container {
+    width: 100%;
+    max-width: 760px;
+    margin: 65px auto;
+    padding: 0 22px;
+}
+
+.introducao {
+    margin-bottom: 30px;
+}
+
+.sobretitulo {
+    display: inline-block;
+    color: #2879dc;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-size: 34px;
+    line-height: 1.2;
+    letter-spacing: -1.2px;
+    margin-bottom: 12px;
+}
+
+.introducao p,
+.painel-titulo p {
+    color: #71809a;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.painel {
+    background: white;
+    border: 1px solid #e5eaf2;
+    border-radius: 15px;
+    padding: 34px;
+    box-shadow: 0 12px 35px rgba(23, 43, 77, 0.06);
+}
+
+.painel-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.painel-titulo h2 {
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+
+.icone {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #eaf3ff;
+    color: #2879dc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.campo {
+    margin-bottom: 23px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+label span {
+    color: #e34e5b;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #dce3ed;
+    border-radius: 8px;
+    background: #fbfcfe;
+    color: #17233c;
+    font-family: inherit;
+    font-size: 13px;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #3989ee;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(57, 137, 238, 0.1);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 125px;
+    line-height: 1.6;
+}
+
+.ajuda {
+    display: block;
+    color: #8995a8;
+    font-size: 11px;
+    margin-top: 8px;
+}
+
+.erro {
+    display: block;
+    color: #d93645;
+    font-size: 12px;
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+button {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background: #2879dc;
+    color: white;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #1766c5;
+    transform: translateY(-1px);
+}
+
+button span {
+    margin-left: 7px;
+    font-size: 17px;
+}
+
+.nota {
+    text-align: center;
+    color: #98a3b5;
+    font-size: 11px;
+    margin-top: 17px;
+}
+
+footer {
+    text-align: center;
+    color: #929db0;
+    font-size: 11px;
+    margin-top: 35px;
+}
+
+.sucesso {
+    text-align: center;
+    padding: 42px 35px;
+}
+
+.simbolo {
+    width: 65px;
+    height: 65px;
+    background: #e5f8ee;
+    color: #1b9b5c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    font-weight: 700;
+    margin: 0 auto 22px;
+}
+
+.sucesso h1 {
+    font-size: 29px;
+}
+
+.sucesso > p {
+    color: #71809a;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.detalhes {
+    background: #f8faff;
+    border: 1px solid #e5eaf2;
+    border-radius: 10px;
+    padding: 22px;
+    text-align: left;
+    margin: 28px 0;
+}
+
+.detalhes h2 {
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 13px 0;
+    border-bottom: 1px solid #e5eaf2;
+    font-size: 13px;
+}
+
+.linha span,
+.descricao span {
+    color: #71809a;
+}
+
+.descricao {
+    padding-top: 16px;
+    font-size: 13px;
+}
+
+.descricao p {
+    color: #17233c;
+    line-height: 1.7;
+    margin-top: 9px;
+    overflow-wrap: anywhere;
+}
+
+.botao-secundario {
+    display: inline-block;
+    text-decoration: none;
+    background: #2879dc;
+    color: white;
+    padding: 14px 22px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.botao-secundario:hover {
+    background: #1766c5;
+}
+
+@media (max-width: 600px) {
+    .topo {
+        padding: 0 22px;
+    }
+
+    .container {
+        margin: 35px auto;
+    }
+
+    .painel {
+        padding: 23px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .sucesso {
+        padding: 30px 20px;
+    }
+}
